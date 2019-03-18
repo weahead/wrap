@@ -1,0 +1,20 @@
+{
+  "name": "@weahead/eslint-config-react",
+  "version": "0.1.0",
+  "description": "We aheads shareable eslint config for React projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "We ahead <alla@weahead.se>",
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "peerDependencies": {
+    "eslint": ">= 5",
+    "eslint-plugin-jsx-a11y": ">= 6",
+    "eslint-plugin-react": ">= 7"
+  }
+}
