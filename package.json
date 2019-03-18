@@ -1,6 +1,6 @@
 {
   "name": "@weahead/eslint-config-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "We aheads shareable eslint config for React projects.",
   "main": "index.js",
   "scripts": {
