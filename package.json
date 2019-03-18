@@ -22,5 +22,8 @@
     "lint-staged": "8.1.5",
     "package-change-checker": "git+https://github.com/weahead/package-change-checker.git#post-checkout",
     "prettier": "1.16.4"
-  }
+  },
+  "files": [
+    "index.js"
+  ]
 }
