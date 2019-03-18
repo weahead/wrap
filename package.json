@@ -7,7 +7,7 @@
     "prettier": "prettier --write '**/*.js'"
   },
   "author": "We ahead <alla@weahead.se>",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "X11",
   "keywords": [
     "eslint",
     "eslintconfig"
