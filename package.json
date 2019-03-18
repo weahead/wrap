@@ -4,7 +4,7 @@
   "description": "We aheads shareable eslint config for React projects.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prettier": "prettier --write '**/*.js'"
   },
   "author": "We ahead <alla@weahead.se>",
   "license": "SEE LICENSE IN LICENSE",
@@ -16,5 +16,8 @@
     "eslint": ">= 5",
     "eslint-plugin-jsx-a11y": ">= 6",
     "eslint-plugin-react": ">= 7"
+  },
+  "devDependencies": {
+    "prettier": "1.16.4"
   }
 }
