@@ -4,7 +4,8 @@
   "description": "We aheads shareable eslint config for React projects.",
   "main": "index.js",
   "scripts": {
-    "prettier": "prettier --write '**/*.js'"
+    "prettier": "prettier --write '**/*.js'",
+    "eslint": "eslint --fix '**/*.js'"
   },
   "author": "We ahead <alla@weahead.se>",
   "license": "X11",
@@ -12,12 +13,16 @@
     "eslint",
     "eslintconfig"
   ],
+  "dependencies": {},
   "peerDependencies": {
     "eslint": ">= 5",
     "eslint-plugin-jsx-a11y": ">= 6",
     "eslint-plugin-react": ">= 7"
   },
   "devDependencies": {
+    "eslint": "5.15.3",
+    "eslint-plugin-jsx-a11y": "6.2.1",
+    "eslint-plugin-react": "7.12.4",
     "husky": "1.3.1",
     "lint-staged": "8.1.5",
     "package-change-checker": "git+https://github.com/weahead/package-change-checker.git#post-checkout",
