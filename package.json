@@ -30,5 +30,13 @@
   },
   "files": [
     "index.js"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weahead/eslint-config-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/weahead/eslint-config-react/issues"
+  },
+  "homepage": "https://github.com/weahead/eslint-config-react#readme"
 }
