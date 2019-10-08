@@ -1,5 +1,6 @@
 {
   "name": "wrap",
+  "version": "0.0.0",
   "license": "X11",
   "bin": {
     "wrap": "./index.js"

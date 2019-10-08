@@ -1,35 +1,36 @@
-"use strict";
+'use strict';
 
-const program = require("commander");
-const chalk = require("chalk");
+const program = require('commander');
+const chalk = require('chalk');
 
-const createApp = require("./createApp");
+const createApp = require('./createApp');
 
-const packageJSON = require("./package.json");
+const packageJSON = require('./package.json');
 
 let projectName;
 
 program
   .version(packageJSON.version)
-  .arguments("<project-directory>")
-  .usage(`${chalk.green("<project-directory>")} [options]`)
+  .arguments('<project-directory>')
+  .usage(`${chalk.green('<project-directory>')} [options]`)
   .action(name => {
     projectName = name;
   })
-  .option("--verbose", "print additional logs")
+  .option('-r, --react', 'react project')
+  .option('-v, --verbose', 'print additional logs')
   .parse(process.argv);
 
 if (projectName === undefined) {
-  console.error("Please specify the project directory:");
+  console.error('Please specify the project directory:');
   console.log(
-    `  ${chalk.cyan(program.name())} ${chalk.green("<project-directory>")}`
+    `  ${chalk.cyan(program.name())} ${chalk.green('<project-directory>')}`
   );
   console.log();
-  console.log("For example:");
-  console.log(`  ${chalk.cyan(program.name())} ${chalk.green("my-wa-app")}`);
+  console.log('For example:');
+  console.log(`  ${chalk.cyan(program.name())} ${chalk.green('my-wa-app')}`);
   process.exit(1);
 }
 
-createApp(projectName, program.verbose).then(() => {
-  console.log("all done!");
+createApp(projectName, program.verbose, program.react).then(() => {
+  console.log('all done!');
 });
