@@ -1,6 +1,24 @@
 {
   "private": true,
   "devDependencies": {
-    "lerna": "^3.16.5"
+    "@commitlint/cli": "8.2.0",
+    "@commitlint/config-conventional": "8.2.0",
+    "@commitlint/prompt-cli": "8.2.0",
+    "@weahead/commitlint-config": "0.2.0",
+    "@weahead/eslint-config-tool": "0.2.0",
+    "@weahead/husky-config": "0.4.3",
+    "@weahead/lint-staged-config": "0.4.0",
+    "@weahead/markdownlint-config": "0.1.0",
+    "@weahead/prettier-config": "0.2.0",
+    "commitizen": "4.0.3",
+    "cz-conventional-changelog": "3.0.2",
+    "eslint": "6.5.1",
+    "eslint-plugin-json": "1.4.0",
+    "husky": "3.0.8",
+    "lerna": "^3.16.5",
+    "lint-staged": "9.4.2",
+    "markdownlint-cli": "0.18.0",
+    "package-change-checker": "1.2.4",
+    "prettier": "1.18.2"
   }
 }
