@@ -1,16 +1,6 @@
 {
-  "name": "root",
   "private": true,
   "devDependencies": {
-    "lerna": "^3.13.1"
-  },
-  "bin": {
-    "wrap": "./index.js"
-  },
-  "dependencies": {
-    "chalk": "^2.4.2",
-    "commander": "^2.19.0",
-    "fs-extra": "^7.0.1",
-    "validate-npm-package-name": "^3.0.0"
+    "lerna": "^3.16.5"
   }
 }

@@ -2,10 +2,10 @@
 
 const path = require("path");
 const os = require("os");
-const { spawn, execSync } = require("child_process");
+const { spawn } = require("child_process");
 const fs = require("fs-extra");
 const chalk = require("chalk");
-const { checkAppName } = require("./validators");
+const { checkAppName } = require("./helpers/validators");
 
 module.exports = function createApp(name, verbose) {
   const root = path.resolve(name);
@@ -44,21 +44,18 @@ module.exports = function createApp(name, verbose) {
 function run(root, appName, verbose, originalDirectory) {
   console.log("Installing packages. This might take a couple of minutes.");
 
-  // TODO: Define dependencies and install them. This needs be read in
-  // conjunction with lerna to keep it all in one place.
-  return install(verbose);
+  // TODO: Define dependencies and install them. This should be @weahead/scripts-whatever
+  // that contains all the config packages to setup a new project.
+  const dependencies = [];
+  return install(dependencies, verbose);
 }
 
 function install(dependencies, verbose) {
   return new Promise((resolve, reject) => {
     const command = "npm";
-    const args = [
-      "install",
-      "--save",
-      "--save-exact",
-      "--loglevel",
-      "error"
-    ].concat(dependencies);
+    const args = ["install", "--save", "--loglevel", "error"].concat(
+      dependencies
+    );
 
     if (verbose) {
       args.push("--verbose");

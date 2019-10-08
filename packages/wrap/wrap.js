@@ -3,7 +3,7 @@
 const program = require("commander");
 const chalk = require("chalk");
 
-const createApp = require("./lib/createApp");
+const createApp = require("./createApp");
 
 const packageJSON = require("./package.json");
 
@@ -26,7 +26,7 @@ if (projectName === undefined) {
   );
   console.log();
   console.log("For example:");
-  console.log(`  ${chalk.cyan(program.name())} ${chalk.green("my-react-app")}`);
+  console.log(`  ${chalk.cyan(program.name())} ${chalk.green("my-wa-app")}`);
   process.exit(1);
 }
 
